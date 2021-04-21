@@ -31,4 +31,11 @@ int main()
 		Record newRecord(item,zip, placename, state, county, lat, lon);
 		postalRecord.push_back(newRecord);
 	}
+
+	unsigned int size = postalRecord.size();
+
+	for (unsigned int i = 0; i < size; i++)
+	{
+		cout << "Position " << i << " : " << postalRecord[i].getZipCode() << endl;
+	}
 }
